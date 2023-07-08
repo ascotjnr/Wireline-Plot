@@ -1,0 +1,20 @@
+Wireline Plotting Tool Instructions
+This tool generates a wireline logs plot using the provided Python script. Follow the instructions below to use the tool effectively:
+
+Data Import: Ensure that the wireline log data is imported into a CSV file. The CSV file should contain the necessary columns for each wireline log track. Modify the df = pd.read_csv(...) line in the script to specify the correct file path.
+
+Descriptive Statistics: Perform descriptive statistics on the data to determine the appropriate limits and depth range for each track. This information will be used to adjust the plot's parameters. Ensure that the limits and depth range are adjusted within the plot_wireline function based on the descriptive statistics of your data.
+
+Define Parameters: Define the parameters for each track using the corresponding section in the script. For example, to plot the Gamma Ray track, define the GR variable as df["GR"]. Adjust the parameters based on your data.
+
+File Location: Verify that the save_path variable in the script points to the desired location where you want to save the plot. Modify the file path to the desired directory and filename.
+
+Plot Generation: Run the plot_wireline function to generate the wireline log plot. The plot will be saved to the specified file location.
+
+Refer to the provided example usage and script comments for more detailed instructions and guidance.
+
+Remember to install the required dependencies such as pandas, numpy, and matplotlib before running the script.
+
+Please note that this tool can be customized to suit specific requirements. Feel free to modify the script accordingly.
+
+For any further assistance, please refer to the README.md file or contact the repository owner.
